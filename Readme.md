@@ -1,4 +1,4 @@
-# UAS - Jackie
+# UAS Rekayasa Aplikasi Terdistribusi Jackie - 03082180006 - 18T2
 
 ## Aplikasi - Python
 Aplikasi ini dibuat dengan menggunakan python dengan menggunakan framework dari Flask. Sehingga aplikasi ini membutuhkan package flask.
@@ -11,4 +11,4 @@ Aplikasi ini merupakan aplikasi yang dapat digunakan untuk melakukan validasi em
 
 ## Cara Menjalankan dan Menggunakan Aplikasi
 - pertama kita dapat masuk ke project directory kemudian jalankan command ```flask run```
-- server berjalan di port 5000. dan dapat langsung mencoba melakukan request ke endpoint tersebut
+- server berjalan di port 5000. dan dapat langsung mencoba melakukan request ke endpoint tersebut http://localhost:5000
