@@ -1,0 +1,43 @@
+FORMAT: 1A
+HOST: http://localhost:5000
+
+# Aplikasi validator berbasis Python
+## Jackie -  UAS
+
+Aplikasi ini dapat digunakan untuk melakukan validasi untuk email dan juga selain itu dapat digunakan untuk melakukan pengecekan terhadap kalimat yang menggandung kata kasar
+
+
+## Validasi Email [POST /email?email={email}]
+melakukan validasi terhadap alamat email, validator menggunakan https://api.eva.pingutil.com
+
++ Parameters    
+
+    + email (string,required,`johndoe@gmail.com`) - Email
+
++ Response 200 (application/json)
+
+    + Attributes
+        + data (object)
+            + catch_all (boolean)
+            + deliverable (boolean) 
+            + disposable (boolean)
+            + domain: @gmail.com (string)
+            + email_address: johndoe@gmail.com (string)
+            + gibberish (boolean)
+            + spam (boolean)
+            + valid_syntax (boolean)
+            + webmail (boolean)
+        + status: success (string)
+
+## Pengecekan kalimat [GET /word?content={content}]
+Melakukan pengecekan terhadap kata-kata kasar, data menggunakan https://www.purgomalum.com
+
++ Parameters 
+
+    + content (string,required,`hello`)
+
++ Response 200 (application/json)
+
+    + Body
+
+            false
